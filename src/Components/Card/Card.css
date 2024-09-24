@@ -1,0 +1,123 @@
+/* Flexbox container to hold the cards */
+.vip-card-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+}
+
+/* General card container styling */
+.vip-card {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 204, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: all 0.3s ease;
+  margin: 20px;
+  display: inline-block;
+  display: flex;
+  flex-direction: column; /* Ensure all cards align vertically */
+}
+
+.vip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255, 204, 0, 0.3);
+}
+
+/* Image styling for card */
+.vip-card-cover img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.vip-card-cover img:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
+
+/* Card body content with fixed height */
+.vip-card-body {
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure buttons are at the bottom */
+  flex-grow: 1; /* Allow content to take up available space */
+  min-height: 180px; /* Set a minimum height for the body */
+}
+
+/* Avatar styling */
+.vip-card-avatar {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.vip-card-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffcc00;
+}
+
+/* Title styling */
+.vip-card-title {
+  color: #ffcc00;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Description styling */
+.vip-card-description {
+  color: #d9d9d9;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allow the description to grow if needed */
+}
+
+/* Button styling */
+.vip-card-btn {
+  background-color: #ffcc00;
+  border: none;
+  color: #1e1e1e;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+.vip-card-btn:hover {
+  background-color: #e6b800;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .vip-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .vip-card-cover img {
+    height: 180px;
+  }
+
+  .vip-card-title {
+    font-size: 18px;
+  }
+
+  .vip-card-description {
+    font-size: 14px;
+  }
+}

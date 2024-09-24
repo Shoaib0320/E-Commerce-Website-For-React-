@@ -1,0 +1,69 @@
+/* Main container for the single product page */
+.single-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #121212; /* Dark background for a luxurious look */
+    color: #fff; /* Text color */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Content wrapper for better alignment */
+.single-product-content {
+    background-color: #1e1e1e; /* Slightly lighter background for the card */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2); /* Glow effect */
+    padding: 20px;
+    max-width: 800px; /* Max width for larger screens */
+    width: 100%; /* Full width for smaller screens */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Title styling */
+.single-product-content h1 {
+    font-size: 28px; /* Larger font size for the title */
+    color: #ffcc00; /* Gold color for the title */
+    text-align: center; /* Centered title */
+    margin-bottom: 15px; /* Space below title */
+}
+
+/* Image styling */
+.single-product-image {
+    width: 50%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below image */
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3); /* Glow effect on image */
+}
+
+/* Description styling */
+.single-product-content p {
+    font-size: 18px; /* Font size for the description */
+    color: #d9d9d9; /* Lighter text color */
+    line-height: 1.6; /* Improved readability */
+    text-align: justify; /* Justified text */
+    margin-top: 10px; /* Space above paragraph */
+}
+
+/* Button styling */
+.single-product-btn {
+    background-color: #ffcc00; /* Gold background for buttons */
+    border: none; /* No border */
+    color: #1e1e1e; /* Dark text color */
+    font-weight: 600; /* Bold font */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 25px; /* Rounded button */
+    width: 100%; /* Full width button */
+    text-align: center; /* Center text in button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    margin-top: 20px; /* Space above button */
+}
+
+/* Button hover effect */
+.single-product-btn:hover {
+    background-color: #e6b800; /* Slightly darker gold on hover */
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4); /* Glow effect on hover */
+}
