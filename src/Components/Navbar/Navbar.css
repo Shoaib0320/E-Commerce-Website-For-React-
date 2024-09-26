@@ -35,8 +35,8 @@ a {
 
 /* Hover effect for VIP feel */
 a:hover {
-    background-color: #ffcc00;
-    color: #fff;
+    background-color: rgba(225, 244, 0, 0.4);
+    color: #fff !important;
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
 }

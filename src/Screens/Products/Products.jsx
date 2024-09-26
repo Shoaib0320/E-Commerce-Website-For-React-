@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Cards from '../../Components/Card/Card'
-import '../../Components/Card/Card'
 
 export const Products = () => {
 

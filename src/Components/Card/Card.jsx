@@ -2,6 +2,8 @@ import React from 'react';
 import './Card.css'; // Import the CSS for the card
 import { useNavigate } from 'react-router-dom';
 
+
+
 function Cards({ item }) {
   const navigator = useNavigate();
 
@@ -9,12 +11,8 @@ function Cards({ item }) {
     console.log('Navigating to single product page...');
     
     // Pass item data (like title, description, and image) to singleProduct page
-    navigator('/singleProduct', {
-      state: {
-        title: item.title,
-        description: item.description,
-        image: item.image
-      }
+    navigator(`/singleProduct/${item.id}`, {
+      state: {item}
     });
   };
 
@@ -24,14 +22,8 @@ function Cards({ item }) {
         <img src={item.image} alt={item.title} />
       </div>
       <div className="vip-card-body">
-        <div className="vip-card-avatar">
-          <img
-            src="https://api.dicebear.com/7.x/miniavs/svg?seed=8"
-            alt="Avatar"
-          />
-        </div>
         <h2 className="vip-card-title">{item.title}</h2>
-        <p className="vip-card-description">{item.description}</p>
+        <p className="vip-card-description">{item.description.slice(0,50)}</p>
         <button className="vip-card-btn" onClick={goToPage}>View Product</button>
       </div>
     </div>

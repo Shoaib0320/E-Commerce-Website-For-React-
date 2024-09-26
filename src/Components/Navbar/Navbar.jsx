@@ -44,9 +44,7 @@ export const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar-logo">
-          <Link to="/">            
-                <img width={'100px'} src={Logo} alt="Logo" />
-          </Link>
+          <img width={'100px'} src={Logo} alt="Logo" />
         </div>
 
         <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
