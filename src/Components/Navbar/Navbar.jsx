@@ -10,6 +10,15 @@ export const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  window.onscroll = function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+};
+
   return (
     <div>
       <nav className="navbar">
@@ -38,6 +47,8 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <br />
+      <br />
       <br />
       <br />
       <br />
