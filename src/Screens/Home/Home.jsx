@@ -270,7 +270,7 @@ export const Home = () => {
         }}
       >
         <Typography variant="h2" gutterBottom sx={{ fontWeight: 700 }}>
-          Welcome to Our VIP Website
+          Welcome to Click Shop Store
         </Typography>
         <Typography variant="h5" gutterBottom>
           Unlock exclusive content and premium features.

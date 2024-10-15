@@ -7,6 +7,7 @@ export const Products = () => {
 
   useEffect(()=>{
     fetch('https://fakestoreapi.com/products')
+    // fetch('https://dummyjson.com/products')
     .then((data)=>{
       return data.json()
     })
@@ -30,3 +31,7 @@ export const Products = () => {
     </div>
   )
 }
+
+
+
+
