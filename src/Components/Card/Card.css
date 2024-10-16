@@ -128,16 +128,16 @@
 
 /* General card container styling */
 .vip-card {
-  background-color: #1a1a1a; /* Darker background to match the navbar */
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
   border-radius: 15px; /* Slightly rounded corners */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+  box-shadow: 0 15px 30px #928dab; /* Shadow for depth */
   overflow: hidden;
   width: 300px;
   transition: all 0.3s ease;
   margin: 20px;
   display: flex;
   flex-direction: column; /* Align all cards vertically */
-  border: 2px solid #d4af37; /* Luxurious gold border */
+  border: 2px solid #928dab; /* Luxurious gold border */
 }
 
 .vip-card:hover {
@@ -186,7 +186,7 @@
 
 /* Title styling */
 .vip-card-title {
-  color: #d4af37; /* Luxurious gold for title */
+  color: #a8b6bc; /* Luxurious gold for title */
   font-size: 22px; /* Emphasis on the title */
   font-weight: 700; /* Bold for a prominent title */
   text-align: center;
@@ -206,9 +206,9 @@
 
 /* Button styling */
 .vip-card-btn {
-  background-color: #d4af37; /* Dark gold for buttons */
+  background-color: #6DA5C0; /* Dark gold for buttons */
   border: none;
-  color: #1a1a1a; /* Dark text for button */
+  color: #fff; /* Dark text for button */
   font-weight: 600;
   padding: 12px 20px; /* Standard padding */
   border-radius: 30px; /* Rounded corners */
@@ -220,8 +220,8 @@
 }
 
 .vip-card-btn:hover {
-  background-color: #b59430; /* Darker gold on hover */
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5); /* Shadow effect on hover */
+  background-color: #928dab; /* Darker gold on hover */
+  box-shadow: 0 8px 25px #928dab; /* Shadow effect on hover */
 }
 
 /* Responsive styles for smaller screens */

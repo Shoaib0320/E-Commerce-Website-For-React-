@@ -6,12 +6,14 @@ import {
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { loginWithEmail } from "../../Config/firebaseConfig";
 import { GoogleButton } from '../Button/GoogleButton/GoogleButton'; // Import the GoogleButton component
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +21,14 @@ export const Login = () => {
     try {
       await loginWithEmail(email, password);
       alert("Login successful!");
-      // Redirect user to another page (e.g., dashboard)
+      
+      // Redirect to /admin if the email is admin@gmail.com
+      if (email === "admin@gmail.com") {
+        navigate("/admin");
+      } else {
+        // Redirect user to another page (e.g., user dashboard)
+        navigate("/");
+      }
     } catch (err) {
       setError(err.message);
     }

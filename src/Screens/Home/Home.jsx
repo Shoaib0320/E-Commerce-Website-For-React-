@@ -283,7 +283,8 @@ export const Home = () => {
             backgroundColor: '#fff',
             color: '#6DA5C0',
             borderRadius: '30px',
-            fontWeight: 'bold',
+            fontSize:20,
+            fontWeight: 'bolder',
             px: 5,
             '&:hover': { backgroundColor: '#6DA5C0', color: 'white' },
           }}
