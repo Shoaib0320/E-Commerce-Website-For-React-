@@ -43,7 +43,7 @@ export const Login = () => {
         alignItems="center"
         mt={8}
       >
-        <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
+        <Avatar style={{backgroundColor:'#6DA5C0',}} sx={{ m: 1, bgcolor: "primary.main" }}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
@@ -70,7 +70,7 @@ export const Login = () => {
           
           {error && <Alert severity="error">{error}</Alert>}
 
-          <Button 
+          <Button style={{backgroundColor:'#6DA5C0',}}
             type="submit" 
             variant="contained" 
             color="primary" 

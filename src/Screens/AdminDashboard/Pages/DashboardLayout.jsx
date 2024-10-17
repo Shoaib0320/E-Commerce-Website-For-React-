@@ -108,7 +108,7 @@ const MainComponent = ({ title }) => { // Destructure title from props
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                        {title} Admin Dashboard
+                        {title} 
                     </Typography>
                 </Toolbar>
             </AppBar>

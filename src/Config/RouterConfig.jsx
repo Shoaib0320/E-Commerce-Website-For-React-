@@ -16,6 +16,7 @@ import Orders from '../Screens/AdminDashboard/Pages/Orders';
 import DeliveredOrders from '../Screens/AdminDashboard/Pages/DeliveredOrders';
 import Feedback from '../Screens/AdminDashboard/Pages/Feedback';
 import PendingOrders from '../Screens/AdminDashboard/Pages/PendingOrders';
+import AddProducts  from '../Screens/AdminDashboard/Pages/AddProducts';
 
 // Create a theme for a VIP look
 const theme = createTheme({
@@ -67,6 +68,7 @@ export const RouterConfig = () => {
 
                     {/* Admin Dashboard Routes */}
                     <Route path='/admin' element={<AdminDashboard />} />
+                    <Route path='/admin/addproducts' element={<AddProducts />} />
                     <Route path='/admin/orders' element={<Orders />} />
                     <Route path='/admin/delivered-orders' element={<DeliveredOrders />} />
                     <Route path='/admin/pending-orders' element={<PendingOrders />} />

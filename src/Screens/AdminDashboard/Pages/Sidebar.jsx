@@ -2,9 +2,13 @@ import React from 'react';
 import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import { ListAlt, CheckCircle, HourglassEmpty, Feedback } from '@mui/icons-material'; // Import icons
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 
 const Sidebar = ({ open, toggleDrawer }) => {
     const menuItems = [
+        { text: 'Dashboard', icon: <DashboardIcon />, path: '/admin' },
+        { text: 'Add Products', icon: <ProductionQuantityLimitsIcon />, path: '/admin/addproducts' },
         { text: 'Orders', icon: <ListAlt />, path: '/admin/orders' },
         { text: 'Delivered Orders', icon: <CheckCircle />, path: '/admin/delivered-orders' },
         { text: 'Pending Orders', icon: <HourglassEmpty />, path: '/admin/pending-orders' },

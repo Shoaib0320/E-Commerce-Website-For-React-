@@ -164,7 +164,7 @@ export const SignUp = () => {
 
         {error && <Alert severity="error">{error}</Alert>}
 
-        <Button 
+        <Button style={{backgroundColor:'#6DA5C0',}}
           type="submit" 
           variant="contained" 
           color="primary" 
