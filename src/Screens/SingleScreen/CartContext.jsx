@@ -450,6 +450,7 @@ export const CartProvider = ({ children }) => {
     const { user } = useContext(AuthContext); // Get user data from AuthContext
     const [cart, setCart] = useState([]); // Cart state
 
+
     // Load cart when the user logs in
     useEffect(() => {
         if (user) {
@@ -477,6 +478,25 @@ export const CartProvider = ({ children }) => {
             }
         }
     };
+
+
+    // const addToCart = (itemId, quantity) => {
+    //     setCart((prevCart) => {
+    //         const existingItem = prevCart.find(item => item.item.id === itemId);
+    //         if (existingItem) {
+    //             // Update quantity if item exists
+    //             return prevCart.map(item => 
+    //                 item.item.id === itemId 
+    //                 ? { ...item, quantity: quantity }
+    //                 : item
+    //             );
+    //         } else {
+    //             // Add new item to the cart
+    //             const newItem = { item: { id: itemId, title: 'Item Title', price: 20, imageUrl: 'path/to/image' }, quantity };
+    //             return [...prevCart, newItem];
+    //         }
+    //     });
+    // };
 
     // Add item to cart and sync with Firestore
     const addToCart = async (item, quantity) => {

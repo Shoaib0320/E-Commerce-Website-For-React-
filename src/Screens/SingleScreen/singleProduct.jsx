@@ -645,7 +645,7 @@ function SingleProduct() {
     return (
         <div className="single-product">
             <div className="single-product-content">
-                <img src={item.image} alt={item.title} className="single-product-image" />
+                <img src={item.imageUrl} alt={item.title} className="single-product-image" />
                 <div className="single-product-details">
                     <h1>{item.title}</h1>
                     <p>{item.description}</p>
