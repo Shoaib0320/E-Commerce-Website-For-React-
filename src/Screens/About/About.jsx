@@ -152,23 +152,23 @@ export const About = () => {
         <div style={{ textAlign: 'center', marginTop: '60px' }}>
           <Title level={4} style={{ fontFamily: 'Poppins, sans-serif', color: '#fff' }}>Join Us in Our Journey!</Title>
           <Button
-      type="primary"
-      size="large"
-      style={{
-        borderRadius: '30px',
-        background: isHovered ? 'linear-gradient(90deg, #14919B, #6DA5C0)' : 'linear-gradient(90deg, #6DA5C0, #14919B)',
-        borderColor: '#1976d2',
-        padding: '0 40px',
-        fontSize: '18px',
-        color: '#fff',
-        transition: '0.3s',
-        transform: isHovered ? 'scale(1.05)' : 'scale(1)', // Scale effect on hover
-      }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      Shop Now
-    </Button>
+            type="primary"
+            size="large"
+            style={{
+              borderRadius: '30px',
+              background: isHovered ? 'linear-gradient(90deg, #14919B, #6DA5C0)' : 'linear-gradient(90deg, #6DA5C0, #14919B)',
+              borderColor: '#1976d2',
+              padding: '0 40px',
+              fontSize: '18px',
+              color: '#fff',
+              transition: '0.3s',
+              transform: isHovered ? 'scale(1.05)' : 'scale(1)', // Scale effect on hover
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            Shop Now
+          </Button>
 
         </div>
       </Content>

@@ -1101,15 +1101,15 @@
 import React, { useState, useEffect } from 'react';
 import {
   TextField, Button, Container, Typography, Grid,
-  CircularProgress, Snackbar, Alert, IconButton, Avatar, Box, Card, CardContent,
+  CircularProgress, Snackbar, Alert, IconButton, Avatar, Box, Card, CardContent, 
 } from '@mui/material';
 import { AddPhotoAlternate, Edit, Delete } from '@mui/icons-material';
 import { collection, addDoc, getDocs, updateDoc, doc, deleteDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, storage } from '../../../Config/firebaseConfig';
 import { Drawer } from 'antd'; // Import Ant Design Drawer
-import MainComponent from './DashboardLayout';
 import AddCategory from './AddCategory'; // Import AddCategory
+import MainComponent from './DashboardLayout';
 
 const AddProducts = () => {
   const [productData, setProductData] = useState({
@@ -1242,8 +1242,8 @@ const AddProducts = () => {
 
   return (
     <Container sx={{ mt: 4 }}>
-      <MainComponent />
-      <br />
+      <MainComponent showMainContent={false} /> {/* Show only sidebar */}
+            <br />
       <Typography variant="h4">Products Management</Typography>
       <br />
       <AddCategory onCategoryChange={setCategories} /> {/* Include AddCategory component */}

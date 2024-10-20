@@ -10,8 +10,8 @@ const Sidebar = ({ open, toggleDrawer }) => {
         { text: 'Dashboard', icon: <DashboardIcon />, path: '/admin' },
         { text: 'Add Products', icon: <ProductionQuantityLimitsIcon />, path: '/admin/addproducts' },
         { text: 'Orders', icon: <ListAlt />, path: '/admin/orders' },
-        { text: 'Delivered Orders', icon: <CheckCircle />, path: '/admin/delivered-orders' },
-        { text: 'Pending Orders', icon: <HourglassEmpty />, path: '/admin/pending-orders' },
+        // { text: 'Delivered Orders', icon: <CheckCircle />, path: '/admin/delivered-orders' },
+        // { text: 'Pending Orders', icon: <HourglassEmpty />, path: '/admin/pending-orders' },
         { text: 'Feedback', icon: <Feedback />, path: '/admin/feedback' }, // Feedback icon
     ];
 
