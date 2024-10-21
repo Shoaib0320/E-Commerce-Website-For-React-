@@ -1149,7 +1149,7 @@ export const CustomersOrders = ({ setHasOrders }) => {
 
     // Function to generate a random order ID
     const generateOrderId = () => {
-        const randomNum = Math.floor(Math.random() * 10000); // Random number up to 1,000,000
+        const randomNum = Math.floor(Math.random() * 1000); // Random number up to 1,000,000
         return `ORD-${randomNum}-Today Date ${Date.now()}`; // Unique order ID format
     };
 
