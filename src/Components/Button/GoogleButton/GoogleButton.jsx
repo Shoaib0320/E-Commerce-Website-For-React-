@@ -99,7 +99,8 @@ const StyledGoogleButton = styled(Button)(({ theme }) => ({
   fontWeight: 'bold', // Bold text for emphasis
   boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Soft shadow for depth
   transition: 'all 0.3s ease', // Smooth transition for hover effects
-  width: '320px', // Fixed width for consistency
+  width: '100%', // Full width for responsiveness
+  maxWidth: '400px', // Maximum width for large screens
   '&:hover': {
     background: '#4F8A92', // Darker shade for hover effect
     color: '#ffffff', // Keep text color white on hover
@@ -110,6 +111,11 @@ const StyledGoogleButton = styled(Button)(({ theme }) => ({
   '&:active': {
     transform: 'translateY(0)', // Reset transform on active
     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', // Return to original shadow
+  },
+  // Responsive styles
+  [theme.breakpoints.down('sm')]: {
+    padding: '10px 10px', // Adjust padding for smaller screens
+    fontSize: '1rem', // Adjust font size for smaller screens
   },
 }));
 
