@@ -204,7 +204,7 @@ import { CartContext } from '../SingleScreen/CartContext';
 import { AuthContext } from '../SingleScreen/AuthContext';
 import { FaTrash } from 'react-icons/fa';
 import { Snackbar, Alert } from '@mui/material'; // Import Snackbar and Alert
-import './AddToCart.css';
+import './Addtocart.css';
 import { db } from '../../Config/firebaseConfig';
 import { doc, getDoc, setDoc, updateDoc, arrayUnion } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
